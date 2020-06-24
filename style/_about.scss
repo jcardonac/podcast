@@ -1,0 +1,12 @@
+.podcast {
+    &__about {
+        &__image {
+            transform: translateY(-7rem);
+            margin-bottom: -5rem;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

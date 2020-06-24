@@ -1,0 +1,206 @@
+@media screen and (min-width:768px) {
+    body {
+        font-size: 18px;
+    }
+
+    .podcast {
+        &__content {
+            padding-right: 4rem;
+            padding-left: 4rem;
+        }
+
+        &__contentExpanded {
+            padding-right: 2rem;
+            padding-left: 2rem;
+        }
+        &__guests,
+        &__topics {
+            &__content {
+                @include flex-wrap;
+            }
+        }
+
+        &__guests {
+            div {
+                flex: 0 0 33.3333%;
+            }
+        }
+
+        &__topics {
+            div {
+                flex: 0 0 25%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 20px;
+
+        h2 {
+            font-size: 48px;
+            margin-bottom: 4rem;  
+        }
+
+        h1 {
+            font-size: 64px;
+            margin-bottom: 3rem;        
+        }
+
+        .BackBlue {
+            padding-bottom: 20vw;
+        }
+    
+        .BackBlue2 {
+            padding-bottom: 10vw;
+        }
+    }
+
+    .podcast {
+        &__episodes {
+            &__List {
+                @include flex-wrap;
+                div {
+                    flex: 0 0 50%;
+                    padding: 10px;
+                    box-sizing: border-box;
+                }
+            } 
+        }
+
+        &__about {
+            @include flex-wrap; 
+            font-size: 16px;
+
+            div {
+                flex: 0 0 50%;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+
+            &__image {
+                transform: translateY(-16rem);
+                margin-bottom: -15rem;
+
+
+                img {
+                    object-fit: cover;
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .btn {
+        width: auto;
+        padding-left: 60px;
+        padding-right: 60px;
+        margin: auto;
+    }
+
+    header {
+        .btn {
+            margin: 50px auto auto 0;
+        }
+    }
+
+    .podcast {
+        &__content {
+            padding-right: 10rem;
+            padding-left: 10rem;
+        }
+
+        &__contentExpanded {
+            padding-right: 6rem;
+            padding-left: 6rem;
+        }
+
+        &__header {
+            padding-top: 8rem;
+
+            .btn {
+                margin-left: 0;
+            }
+        }
+
+        &__about {
+
+            &__image {
+                transform: translateY(-20rem);
+                margin-bottom: -17rem;
+
+                img {
+                    object-fit: cover;
+                    width: 90%;
+
+                }
+            }
+        }
+
+        &__nav {
+            height: auto;
+            div {
+                padding-right: 0;
+                padding-left: 4rem;
+            }
+
+            &__menu {
+
+                label {
+                    display: none;
+                }
+
+                .list-menu {
+                    &.podcast__content {
+                        padding-right: 4rem;
+                        padding-left: 0; 
+                    }
+                    visibility: visible;
+                    display: flex;
+                    position: relative;
+                    top: 0;
+                    right: 0;
+                    background-color: white;
+                    height: 80px;
+
+                    a {
+                        color: $color-azulbtntext;
+                        opacity: 1;
+                    }
+
+                    ul {
+                        display: flex;
+
+                        li {
+                            padding: 10px 24px;
+
+                        }
+                    }
+                }
+
+                #menu-toogle {
+                    display: none;
+    
+                    &:checked~.list-menu {
+                        height: 80px;
+                    }
+                }
+            }
+        }
+
+        &__footer {
+            width: 100%;
+            font-size: 16px;
+            @include flex-wrap; 
+            flex-direction: row;
+            justify-content: space-between;
+
+            &__networks {
+                flex: 0 0 20%;
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.podcast {
+    &__topics {
+        &__content {
+            div {
+                margin-bottom: 2rem;
+                font-family: IBMPlexSans-SemiBold;
+                font-size: 24px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+    
+                img {
+                    margin-bottom: 1rem;
+                }
+            }
+        } 
+    }
+}

@@ -1,0 +1,14 @@
+.podcast {
+    &__episodes {
+        div {
+            padding-bottom: 10px;
+        }
+
+        iframe {
+            border: none;
+            background: transparent;
+            overflow: hidden;
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Jenny Cardona Correa - jcardonac@gmail.com" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style/reset.css" />
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <title>Hello, JavaScript world! Podcast</title>
+</head>
+<body>
+    <header>
+        <nav class="podcast__nav">
+            <div class="podcast__content">
+                <div class="podcast__nav__logo">
+                    <a href="#top"><img src="images/logo.svg" alt="Podcast" /></a>
+                </div>
+                <div class="podcast__nav__menu">
+                    <input type="checkbox" id="menu-toogle">
+                    <label class="podcast__nav__icon" for="menu-toogle"></label>
+                    <div class="list-menu podcast__content">
+                        <ul>
+                            <li><a href="#episodes">Episodios</a> </li>
+                            <li><a href="#about">Nosotros</a> </li>
+                            <li><a href="#guests">Entrevistas</a></li>
+                            <li><a href="#topics">Tópicos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="top" class="podcast__content podcast__header">
+            <h1>Hello, JavaScript <s>World</s><span>.</span></h1>
+            <p>Un podcast que explora el mundo de la programación. Nuevos episodes, todos los jueves cada 15 días..</p>
+            <button class="btn podcast__boton" type="submit">Conoce más</button>
+        </div>
+    </header>
+
+    <!-- episodes --> 
+    <section id="episodes" class="podcast__episodes backBlue">
+            <h2 class="podcast__content">Episodios</h2>
+            <div class="podcast__episodes__List podcast__contentExpanded">
+                <div>
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/6JG49A823QNl9curzYnK99" height="232"  allow="encrypted-media"></iframe>                 
+                </div>
+                <div>
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/2oqJChDBIJurDSmc8aBXua" height="232"  allow="encrypted-media"></iframe>
+                </div>
+                <div>
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/61yYPXFIgOYFGV9ZwWaB7H" height="232" allow="encrypted-media"></iframe>                
+                </div>
+                <div>
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/5aqq4S80F5KfqHIJFYAQVO" height="232" allow="encrypted-media"></iframe>                </div>
+            </div>
+    </section>
+
+     <!-- de done venimos --> 
+     <section id="about" class="podcast__about podcast__content">
+        <div class="podcast__about__image">
+            <img src="images/phone.png"  alt="The Secrect History of women in coding"/>
+        </div>
+        <div class=" podcast__about__item">
+            <h2>De dónde venimos</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius ligula tortor, quis elementum nunc malesuada sed. </p>
+            <p>Nullam congue dui quis ligula porttitor, quis dapibus quam elementum. Morbi odio nibh, consectetur vel neque eu, rutrum laoreet diam.</p>
+        </div>
+    </section>
+
+     <!-- Invitadoas -->  
+     <section id="guests" class="podcast__guests">
+        <h2 class="podcast__content">Invitadas/os estelares</h2>
+        <div class="podcast__guests__content">
+                <div>
+                    <img src="images/grace-hopper.png" alt="Grace Hopper"/>
+                </div>
+                <div>
+                    <img src="images/Katie-Bouman.png" alt="Katie Bouman"/>
+                </div>
+                <div>
+                    <img src="images/Margaret_Hamilton.png" alt="Margaret Hamilton"/>
+                </div>
+                <div>
+                    <img src="images/computerinthe1950s.png" alt="An E.R.A.Univac 1103 computer in the 1950s" />
+                </div>
+                <div>
+                    <img src="images/ComputeroperatorswithanEniac.png" alt="Computer operators with an Eniac — the world’s first programmable general-purpose computer" />
+                </div>
+                <div>
+                    <img src="images/susan-kare.png" alt="Susan Kare"/>
+                </div>
+        </div>
+    </section>
+
+     <!-- topics --> 
+     <section id="topics" class="podcast__topics">
+        <div class="podcast__content">
+            <h2>Algunos de nuestros Temas</h2>
+            <div class="podcast__topics__content">
+                <div>
+                    <img src="images/icon1.svg" alt="Trabajo remoto" />
+                    <span>Trabajo remoto</span>
+                </div>
+                <div>
+                    <img src="images/icon2.svg" alt="Repensando la programación" />
+                    <span>Repensando la programación</span>
+                </div>
+                <div>
+                    <img src="images/icon3.svg" alt="Bases del código" />
+                    <span>Bases del código</span>
+                </div>
+                <div>
+                    <img src="images/icon4.svg" alt="Seguridad informática" />
+                    <span>Seguridad informática</span>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <section id="News" class="podcast__news">
+        <div class="podcast__content backBlue backBlue2">
+            <h2 class="podcast__News__Title">¿Quieres las últimas Novedades?</h2>
+
+            <button class="btn podcast__boton" type="submit">Escucha Episodios</button>
+        </div>
+    </section>
+
+    <!-- copyright --> 
+    <footer>
+        <div class="podcast__contentExpanded podcast__footer">
+            <div class="podcast__footer__copyright">© 2020 — Hello blue pale dot</div>
+            <div class="podcast__footer__networks">
+                <a href="https://open.spotify.com/show/0R46Q4lsN14bWIAIZm07D1?t=0" target="_blank"><i class="fa fa-spotify"></i></a>
+                <a href="https://www.instagram.com/javascript.js/" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://twitter.com/javascriptdaily" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com/cssminskjs/" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://web.telegram.org/#/login" target="_blank"><i class="fa fa-telegram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

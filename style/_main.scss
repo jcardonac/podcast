@@ -1,0 +1,130 @@
+@font-face {
+    font-family: IBMPlexMono;
+    src: url(../font/IBMPlexMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: IBMPlexMono-Medium;
+    src: url(../font/IBMPlexMono-Medium.ttf);
+}
+
+@font-face {
+    font-family: IBMPlexSans;
+    src: url(../font/IBMPlexSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: IBMPlexSans-SemiBold;
+    src: url(../font/IBMPlexSans-SemiBold.ttf);
+}
+
+@mixin maxWidthBig{
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: IBMPlexMono;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin: 0;
+    line-height: 1.4em;
+
+    h1, h2{
+        font-family: IBMPlexSans;
+        font-size: 36px;
+        margin-bottom: 2rem;
+        font-weight: 300;
+        line-height: 1.2em;
+    }
+
+    p{
+        margin-bottom: 16px;
+    }
+
+    .backBlue{
+        background-image: linear-gradient($color-azulclaro, $color-azuloscuro);
+        clip-path: polygon(100% 0, 100% calc(100% - 10vw), 0 100%, 0 calc(0% + 10vw));
+        color: white;
+        padding-top: 14vw;
+        padding-bottom: 30vw;
+    }
+
+    .backBlue2{
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 calc(0% + 10vw));
+        padding-bottom: 16vw;
+    }
+
+    section,
+    header{
+        padding-top: 2rem;
+    }
+
+}
+
+.podcast{
+    &__content, &__contentExpanded {
+        width: 100%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        margin-right: auto;
+        margin-left: auto;
+        box-sizing: border-box;
+    }
+
+    &__boton {
+        background-color: $color-verde;
+        color: $color-azulbtntext;
+        text-transform: uppercase;
+        font-family: IBMPlexMono-Medium;
+        border-radius: 0px;
+        border: 0px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        width: 100%;
+        display: block;
+        font-size: 16px;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 22px;
+        cursor: pointer;
+
+        &:hover {
+            color: white;
+            background-image: linear-gradient(to right, $color-verde, $color-azulhover);
+            transition: 0.5s;
+        }
+    }
+
+    &__header {
+        h1 {
+            transform: translateY(2rem);
+            margin-bottom: 4rem;
+
+            span {
+                font-size: 60px;
+                color: $color-azulmenubg;
+            }
+        }
+
+        .btn {
+            padding-top: 18px;
+            padding-bottom: 18px;
+            margin: 40px auto;
+        }
+    }
+
+    &__news {
+        text-align: center;
+    }
+}

@@ -1,0 +1,90 @@
+.podcast {
+    &__nav {
+        height: 44px;
+        padding-top: 10px;
+        position: fixed;
+        top: 0px;
+        display: block;
+        width: 100%;
+        z-index: 20;
+        background: #fff;
+
+        div {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__icon {
+            display: block;
+            z-index: 2;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        &__menu {
+            ul {
+                list-style: none;
+                text-transform: uppercase;
+                font-size: 16px;
+                line-height: 40px;
+                width: 100%;
+
+            }
+
+            label:before {
+                content: "\2630";
+            }
+
+            .list-menu {
+                top: 44px;
+                right: 0px;
+                width: 100%;
+                z-index: 1;
+                transition: background-color .5s;
+                position: fixed;
+                background-color: $color-azulmenubg;
+                height: 0;
+                visibility: hidden;
+                transition: visibility ease-in 0.33s, height 0.33s ease-in;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    display: inline-block;
+                    width: 100%;
+                    opacity: 0;
+                    transition-delay: 0.3s;
+
+                    &:hover {
+                        color: $color-verde;
+                        text-decoration: line-through;
+                    }
+
+                    &:active {
+                        color: rgba(6,10,36,0.56);
+                        text-decoration: line-through;
+                    }
+                }
+            }
+
+            #menu-toogle {
+                display: none;
+
+                &:checked~.list-menu {
+                    height: 170px;
+                    visibility: visible;
+
+                    a {
+                        opacity: 1;
+                        transition-delay: 0s;
+                    }
+                }
+
+                &:checked+label:before {
+                    content: "\2613";
+                }
+            }
+        }
+       
+    }
+}
